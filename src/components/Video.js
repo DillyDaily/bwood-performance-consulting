@@ -3,10 +3,10 @@ import '../App.css';
 
 class Video extends Component {
   render () {
-    let videoSrc = "https://www.youtube.com/embed/Ur79MoWkYqg?rel=1" + 
-    this.props.video + "?autoplay=1" + 
-    this.props.autoplay + "&rel=1" + 
-    this.props.rel + "&modestbranding=1" +
+    let videoSrc = "https://www.youtube.com/embed/Ur79MoWkYqg?rel=0" + 
+    this.props.video + "?autoplay=0" + 
+    this.props.autoplay + "&rel=0" + 
+    this.props.rel + "&modestbranding=0" +
     this.props.modest;
 
     // <iframe width="420" height="315"

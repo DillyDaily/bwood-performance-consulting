@@ -5205,6 +5205,10 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
+react-parallax@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/react-parallax/-/react-parallax-1.5.1.tgz#e5cf466342a80bb0e27f5e4605e85eb171e4e9b8"
+
 react-popper@^0.7.2:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.4.tgz#8649d539837e7c6f47bc9b24c9cf57a404e199a1"
