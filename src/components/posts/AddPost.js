@@ -7,20 +7,21 @@ import TopNav from '../TopNav';
 import Title from '../Title';
 import Footer from '../Footer';
 
-class AddEditPost extends Component {
+class AddPost extends Component {
   state = {
     title: '',
     blog_content: '',
     image: ''
   }
-
+  
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.addPost(this.state)
     this.props.history.push('/blog')
   }
-
+  
   render () {
+    console.log('props from ADD/EDIT POST: ', this.props)
     return (
       <div>
       <TopNav />      
@@ -69,4 +70,5 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(null, mapDispatchToProps)(AddEditPost);
+
+export default connect(null, mapDispatchToProps)(AddPost);

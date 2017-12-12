@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import AddEditPost from './components/posts/AddEditPost';
+import AddPost from './components/posts/AddPost';
+import EditPost from './components/posts/EditPost';
 import AllPosts from './components/posts/AllPosts';
+import AdminAllPosts from './components/posts/AdminAllPosts';
 import OnePost from './components/posts/OnePost';
+import AdminOnePost from './components/posts/AdminOnePost';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -25,14 +28,17 @@ class App extends Component {
         <Router>
           <div>
             <Switch>
+              {/* USERS */}
               <Route exact path="/" component={ Home }/>
               <Route exact path="/services" component={ Services }/>
               <Route exact path="/testimonials" component={ Testimonials }/>
               <Route exact path="/contact" component={ Contact }/>
               <Route exact path="/blog" component={ AllPosts }/>
-              <Route exact path="/blog/:id" component={ OnePost }/>
-              <Route exact path="/admin/blog/new" component={ AddEditPost }/>
-              <Route exact path="/admin/blog/:id/edit" component={ AddEditPost }/>
+              {/* ADIMIN */}
+              <Route exact path="/admin/blog" component={ AdminAllPosts }/>
+              <Route exact path="/admin/blog/new" component={ AddPost }/>
+              <Route exact path="/admin/blog/edit/:id" component={ EditPost }/>
+              {/* <Route exact path="/admin/blog/:id" component={ DELETE }/> */}
             </Switch>
           </div>
         </Router>

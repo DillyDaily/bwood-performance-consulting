@@ -22,20 +22,20 @@ export const getPosts = () => {
 export const addPost = (newPost) => {
     return async (dispatch) => {
         dispatch({ type: ADD_POST_PENDING })
-        let posts = await axios.post('http://localhost:8080/blog', newPost)
+        let posts = await axios.post('http://localhost:8080/admin/blog/new', newPost)
         dispatch({ 
             type: ADD_POST_SUCCESS,
             payload: posts
         })
     }
 }
-// export const getPosts = () => {
-//     return async (dispatch) => {
-//         dispatch({ type: GET_POSTS_PENDING })
-//         let posts = await axios.get('http://localhost:8000/posts')
-//         dispatch({ 
-//             type: GET_POSTS_SUCCESS,
-//             payload: posts
-//         })
-//     }
-// }
+export const editPost = (editedPost) => {
+    return async (dispatch) => {
+        dispatch({ type: EDIT_POSTS_PENDING })
+        let posts = await axios.patch('http://localhost:8080/admin/blog/edit/:id', editedPost)
+        dispatch({ 
+            type: EDIT_POSTS_SUCCESS,
+            payload: posts.config
+        })
+    }
+}

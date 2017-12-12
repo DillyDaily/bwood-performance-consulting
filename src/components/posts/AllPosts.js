@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-// import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import OnePost from './OnePost';
+import TopNav from '../TopNav';
+import Title from '../Title';
+import Footer from '../Footer';
 
 class AllPosts extends Component {
   render () {
@@ -9,7 +11,10 @@ class AllPosts extends Component {
     let thePosts = this.props.posts.map(post => <OnePost key={post.id} post={post} />)
     return (
       <div> 
-        {thePosts}
+         <TopNav />
+         <Title />
+         {thePosts}
+         <Footer />
       </div>
     )
   }

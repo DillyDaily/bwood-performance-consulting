@@ -2,6 +2,7 @@ import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import '../App.css';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default class TopNav extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class TopNav extends React.Component {
     return (
         <Navbar className="navBarContainer" color="" dark expand="md">
           <div className="logo"> 
-            <NavbarBrand href="/"><img src={logo} alt="logo" /></NavbarBrand>
+            <NavbarBrand> <Link to="/"><img src={logo} alt="logo" /></Link></NavbarBrand>
           </div>
           <div className="newNav">
 
@@ -30,16 +31,16 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto pageLinks" navbar>
               <NavItem>
-                <NavLink href="/services/">Services</NavLink>
+                <NavLink> <Link to="/services/">Services </Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/testimonials/">Testimonials</NavLink>
+                <NavLink> <Link to="/testimonials/">Testimonials </Link> </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/blog/">Blog</NavLink>
+                <NavLink> <Link to="/blog/">Blog </Link> </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact/">Contact</NavLink>
+                <NavLink> <Link to="/contact/">Contact </Link> </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

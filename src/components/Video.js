@@ -3,7 +3,7 @@ import '../App.css';
 
 class Video extends Component {
   render () {
-    let videoSrc = "https://www.youtube.com/embed/Ur79MoWkYqg?rel=0" + 
+    let videoSrc = "https://www.youtube.com/embed/Ur79MoWkYqg?rel=0&amp;controls=0&amp;showinfo=0" + 
     this.props.video + "?autoplay=0" + 
     this.props.autoplay + "&rel=0" + 
     this.props.rel + "&modestbranding=0" +

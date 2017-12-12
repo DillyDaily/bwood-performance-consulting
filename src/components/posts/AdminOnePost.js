@@ -2,8 +2,9 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
 import '../../App.css';
+import GoIconPack from 'react-icons/lib/go/trashcan';
 
-const OnePost = (props) => {
+const AdminOnePost = (props) => {
   let { title, blog_content, image } = props.post
   return (
      
@@ -23,7 +24,11 @@ const OnePost = (props) => {
           <Card className="blogContent" body>
             <CardTitle>{title}</CardTitle>
             <CardText>{blog_content}</CardText>
-            <Button>Go somewhere</Button>
+            <Button>EDIT</Button>
+            
+            {/* LINK to (/delete/blog/:id) */}
+            <Button>DELETE</Button> 
+
           </Card>
         </Col>
       </Row>
@@ -39,4 +44,4 @@ function mapStateToProps(state, props) {
   }
 }
 
-export default connect(mapStateToProps, null)(OnePost)
+export default connect(mapStateToProps, null)(AdminOnePost)
