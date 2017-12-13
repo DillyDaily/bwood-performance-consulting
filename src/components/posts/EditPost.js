@@ -21,7 +21,7 @@ class EditPost extends Component {
   }
   
   render () {
-    console.log('props from ADD/EDIT POST: ', this.props)
+    console.log('props from EDIT POST: ', this.props)
     return (
       <div>
       <TopNav />      

@@ -38,7 +38,6 @@ class App extends Component {
               <Route exact path="/admin/blog" component={ AdminAllPosts }/>
               <Route exact path="/admin/blog/new" component={ AddPost }/>
               <Route exact path="/admin/blog/edit/:id" component={ EditPost }/>
-              {/* <Route exact path="/admin/blog/:id" component={ DELETE }/> */}
             </Switch>
           </div>
         </Router>

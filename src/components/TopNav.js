@@ -22,7 +22,7 @@ export default class TopNav extends React.Component {
     return (
         <Navbar className="navBarContainer" color="" dark expand="md">
           <div className="logo"> 
-            <NavbarBrand> <Link to="/"><img src={logo} alt="logo" /></Link></NavbarBrand>
+            <NavbarBrand tag={Link} to="/"><img src={logo} alt="logo"/></NavbarBrand>
           </div>
           <div className="newNav">
 
@@ -31,16 +31,16 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto pageLinks" navbar>
               <NavItem>
-                <NavLink> <Link to="/services/">Services </Link></NavLink>
+                <NavLink tag={Link} to="/services/">Services</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink> <Link to="/testimonials/">Testimonials </Link> </NavLink>
+                <NavLink tag={Link} to="/testimonials/">Testimonials</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink> <Link to="/blog/">Blog </Link> </NavLink>
+                <NavLink tag={Link} to="/blog/">Blog</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink> <Link to="/contact/">Contact </Link> </NavLink>
+                <NavLink tag={Link} to="/contact/">Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

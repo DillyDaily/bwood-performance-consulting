@@ -12,7 +12,9 @@ class AdminAllPosts extends Component {
     return (
       <div> 
          <TopNav />
-         <Title />
+         <div>
+           <button> ADD NEW POST </button>
+         </div>
          {thePosts}
          <Footer />
       </div>

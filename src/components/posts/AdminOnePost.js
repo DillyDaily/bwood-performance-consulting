@@ -3,9 +3,13 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Row
 import { connect } from 'react-redux';
 import '../../App.css';
 import GoIconPack from 'react-icons/lib/go/trashcan';
+import { bindActionCreators } from 'redux';
+import { editPost } from '../../actions/posts.actions';
+import { deletePost } from '../../actions/posts.actions';
+import { Link } from 'react-router-dom';
 
 const AdminOnePost = (props) => {
-  let { title, blog_content, image } = props.post
+  let { id, title, blog_content, image } = props.post
   return (
      
       <div className="blogContainer">
@@ -24,10 +28,11 @@ const AdminOnePost = (props) => {
           <Card className="blogContent" body>
             <CardTitle>{title}</CardTitle>
             <CardText>{blog_content}</CardText>
-            <Button>EDIT</Button>
+
+             <Button tag={Link} to={`/admin/blog/edit/${id}`}> EDIT </Button>
             
             {/* LINK to (/delete/blog/:id) */}
-            <Button>DELETE</Button> 
+             <Button onClick={() => props.deletePost(id)} >  DELETE </Button> 
 
           </Card>
         </Col>
@@ -44,4 +49,11 @@ function mapStateToProps(state, props) {
   }
 }
 
-export default connect(mapStateToProps, null)(AdminOnePost)
+function mapDispatchToProps(dispatch) {
+  return {
+    editPost: bindActionCreators(editPost, dispatch),
+    deletePost: bindActionCreators(deletePost, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdminOnePost)
