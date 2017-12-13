@@ -66,7 +66,8 @@ font-family: 'Arimo', sans-serif; */
 
 .tagLine {
   flex: 1;
-  background-color: rgba(208, 48, 56, 0.4);
+  justify-content: center;
+  background-color: rgba(246, 212, 60, 0.55);
   color: white;
   margin-left: 225px;
   margin-right: 40px;
@@ -74,31 +75,30 @@ font-family: 'Arimo', sans-serif; */
   font-family: 'Arimo', sans-serif;
   font-size: 60px;
   font-variant-caps: all-small-caps;
-  border: 4px solid black;
+  border: 4px solid #3C3A3C;
 }
 
 .billyInfo {
   flex: 1;
-  background-color: rgba(208, 48, 56, 0.4);
+  background-color: rgba(246, 212, 60, 0.5);
   color: white;
   margin-right: 225px;
   margin-left: 40px;
   font-family: 'Arimo', sans-serif;
-  /* font-variant-caps: all-small-caps; */
+  font-variant-caps: all-small-caps;
   font-size: 35px;
   padding: 25px;
-  border: 4px solid black;
+  border: 4px solid #3C3A3C;
 }
 
-.AboutButton {
+.choosePlan {
   display: flex;
-  justify-content: flex-end;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 30px;
-  font-variant-caps: all-small-caps;
-  margin: 4px;
-  padding: 6px;
+  justify-content: center;
+  margin-top: 20%;
+  font-family: 'Arimo', sans-serif;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  padding: 20px;
+  color: white;
 }
 
 .footerContainer {
@@ -123,15 +123,14 @@ font-family: 'Arimo', sans-serif; */
 
 .ServicesContainer {
   display: flex;
-  /* background-image: url("./assets/stairs.JPG"); */
-  background-size: cover;
+  /* background-size: cover; */
   margin-top: 5px;
   padding: 20px;
 }
 
 .PersonalTrain {
   flex: 1;
-  background-color: rgba(208, 48, 56, 0.4);
+  background-color: rgba(246, 212, 60, 0.55);
   color: white;
   margin-left: 125px;
   margin-right: 50px;
@@ -144,13 +143,13 @@ font-family: 'Arimo', sans-serif; */
 
 .OnlineTrain {
   flex: 1;
-  background-color: rgba(208, 48, 56, 0.4);
+  background-color: rgba(246, 212, 60, 0.55);
   color: white;
   margin-right: 125px;
   margin-left: 50px;
   font-family: 'Arimo', sans-serif;
   /* font-variant-caps: all-small-caps; */
-  font-size: 35px;
+  font-size: 30px;
   padding: 25px;
   border: 4px solid black;
 }
