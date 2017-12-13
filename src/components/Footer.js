@@ -12,7 +12,6 @@ class Footer extends Component {
         </div>
           
         <div className="socialButtons">
-        <h4>Follow Billy</h4>
           <SocialIcon url="https://www.facebook.com/billy.woodmansee" />
           <SocialIcon url="https://www.instagram.com/coach_billywood/" />
           <SocialIcon url="https://twitter.com/billywood09" />
