@@ -4,6 +4,8 @@ import Title from '../Title';
 import Footer from '../Footer';
 import { connect } from 'react-redux';
 import AdminOnePost from './AdminOnePost';
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 class AdminAllPosts extends Component {
   render () {
@@ -13,7 +15,7 @@ class AdminAllPosts extends Component {
       <div> 
          <TopNav />
          <div>
-           <button> ADD NEW POST </button>
+         <Button size="lg" tag={Link} to={`/admin/blog/new`}> ADD NEW POST </Button>
          </div>
          {thePosts}
          <Footer />

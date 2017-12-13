@@ -8,11 +8,11 @@ font-family: 'Arimo', sans-serif; */
 
 .navBarContainer {
   display: flex;
-  background-color: FAFAFA;
+  background-color: black;
 }
 
 .logo {
-  background-color: FAFAFA;
+  background-color: black;
   margin-left: 225px;
 }
 
@@ -24,14 +24,14 @@ font-family: 'Arimo', sans-serif; */
 .newNav {
   flex: 4;
   align-self: flex-end;
-  background-color: FAFAFA;
+  background-color: black;
   margin-right: 225px;
 }
 
 .titleContainer {
   display: flex;
   justify-content: center;
-  background-image: url("./assets/Finish.JPG");
+  background-image: url("https://images.unsplash.com/photo-1502481686408-d428268c24ff?auto=format&fit=crop&w=1867&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
   background-size: 100%;
   margin-top: 4px;
   margin-bottom: 5px; 

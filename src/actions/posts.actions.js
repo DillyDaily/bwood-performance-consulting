@@ -29,10 +29,10 @@ export const addPost = (newPost) => {
         })
     }
 }
-export const editPost = (id) => {
+export const editPost = (post) => {
     return async (dispatch) => {
         dispatch({ type: EDIT_POST_PENDING })
-        let posts = await axios.patch(`http://localhost:8080/admin/blog/edit/${id}`)
+        let posts = await axios.patch(`http://localhost:8080/admin/blog/edit/${post.id}`, post)
         dispatch({ 
             type: EDIT_POST_SUCCESS,
             payload: posts
@@ -43,10 +43,9 @@ export const deletePost = (id) => {
     return async (dispatch) => {
         dispatch({ type: REMOVE_POST_PENDING })
         let posts = await axios.delete(`http://localhost:8080/delete/blog/${id}`)
-        let newPosts = await axios.get('http://localhost:8080/blog')
         dispatch({ 
             type: REMOVE_POST_SUCCESS,
-            payload: newPosts
+            payload: posts.data
         })
     }
 }

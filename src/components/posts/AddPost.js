@@ -6,6 +6,7 @@ import { addPost } from '../../actions/posts.actions';
 import TopNav from '../TopNav';
 import Title from '../Title';
 import Footer from '../Footer';
+import { Field, reduxForm } from 'redux-form';
 
 class AddPost extends Component {
   state = {
@@ -69,6 +70,10 @@ function mapDispatchToProps(dispatch) {
     addPost: bindActionCreators(addPost, dispatch)
   }
 }
+
+// CreatePost = reduxForm({
+//   form: 'add_post'
+// })(CreatePost)
 
 
 export default connect(null, mapDispatchToProps)(AddPost);

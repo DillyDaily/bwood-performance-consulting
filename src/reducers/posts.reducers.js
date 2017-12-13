@@ -26,7 +26,7 @@ export default (state = [], action) => {
         case REMOVE_POST_PENDING:
             return state;
         case REMOVE_POST_SUCCESS:
-            return [...action.payload.data];
+            return [...action.payload];
         default: 
             return state;
     }
