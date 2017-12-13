@@ -165,12 +165,15 @@ font-family: 'Arimo', sans-serif; */
   width: 600px;
   padding: 2em;
   margin: 1em;
+
 }
 .blogContent {
   flex: 1;
   width: 600px;
-  height: 600px;
+  /* background: cover; */
+  height: 400px;
   padding: 2em;
   margin: 1em;
+  font-size: 20px;
 }
 

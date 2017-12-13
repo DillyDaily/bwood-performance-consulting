@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
-import '../../App.css';
+import '../App.css';
 
-const OnePost = (props) => {
-  let { title, blog_content, image } = props.post
+const OneTestimonial = (props) => {
+  let { title, testimonial_content, image } = props.testimonial
   return (
      
       <div className="blogContainer">
@@ -22,7 +22,7 @@ const OnePost = (props) => {
         <Col sm="6">
           <Card className="blogContent" body>
             <CardTitle>{title}</CardTitle>
-            <CardText>{blog_content}</CardText>
+            <CardText>{testimonial_content}</CardText>
           </Card>
         </Col>
       </Row>
@@ -34,8 +34,8 @@ const OnePost = (props) => {
 
 function mapStateToProps(state, props) {
   return {
-    posts: state.posts
+    testimonials: state.testimonials
   }
 }
 
-export default connect(mapStateToProps, null)(OnePost)
+export default connect(mapStateToProps, null)(OneTestimonial)

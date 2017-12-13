@@ -16,7 +16,7 @@ class Services extends Component {
         strength={500}>
         <div style={{height: 500}}>
         <div className="choosePlan">
-          <h1>Choose A Plan That's Right For You</h1>
+          <h1>Choose A Program That's Right For You</h1>
         </div>
         </div>
       </Parallax>

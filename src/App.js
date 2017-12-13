@@ -15,10 +15,12 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getPosts } from './actions/posts.actions';
+import { getTestimonials } from './actions/testimonials.actions';
 
 class App extends Component {
   componentDidMount() {
     this.props.getPosts()
+    this.props.getTestimonials()
   }
 
   render() {
@@ -50,7 +52,8 @@ class App extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getPosts: bindActionCreators(getPosts, dispatch)
+    getPosts: bindActionCreators(getPosts, dispatch),
+    getTestimonials: bindActionCreators(getTestimonials, dispatch)
   }
 }
 
