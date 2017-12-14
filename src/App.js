@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Admin from './components/Admin';
 import AddPost from './components/posts/AddPost';
 import EditPost from './components/posts/EditPost';
 import AllPosts from './components/posts/AllPosts';
@@ -37,6 +38,7 @@ class App extends Component {
               <Route exact path="/contact" component={ Contact }/>
               <Route exact path="/blog" component={ AllPosts }/>
               {/* ADIMIN */}
+              <Route exact path="/admin" component={ Admin }/>
               <Route exact path="/admin/blog" component={ AdminAllPosts }/>
               <Route exact path="/admin/blog/new" component={ AddPost }/>
               <Route exact path="/admin/blog/edit/:id" component={ EditPost }/>

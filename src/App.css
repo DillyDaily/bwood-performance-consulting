@@ -4,6 +4,7 @@ font-family: 'Arimo', sans-serif; */
 
 .App {
   background-color: #F6D53C;
+  /* background-color: white; */
 }
 
 .navBarContainer {
@@ -35,6 +36,30 @@ font-family: 'Arimo', sans-serif; */
   background-size: cover;
   margin-top: 4px;
   margin-bottom: 5px; 
+}
+
+.cloud {
+  display: flex;
+  background-image: url("./assets/clouds.png");
+  background-size: cover;
+  padding: 20px;
+}
+.resultsContainer {
+  background-image: url("./assets/results2.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 30px;
+  padding: 10px;
+  height: 500px;
+  justify-content: center;
+}
+
+.redTrack {
+  display: flex;
+  background-image: url("./assets/finishRed.png");
+  background-size: cover;
+  height: 500px; 
 }
 
 .bwood {
@@ -76,6 +101,7 @@ font-family: 'Arimo', sans-serif; */
   font-size: 60px;
   font-variant-caps: all-small-caps;
   border: 4px solid #3C3A3C;
+  border-radius: 5px;
 }
 
 .billyInfo {
@@ -89,6 +115,7 @@ font-family: 'Arimo', sans-serif; */
   font-size: 35px;
   padding: 25px;
   border: 4px solid #3C3A3C;
+  border-radius: 5px;
 }
 
 .choosePlan {
@@ -177,3 +204,42 @@ font-family: 'Arimo', sans-serif; */
   font-size: 20px;
 }
 
+.formContainer {
+  margin-top: 125px;
+  margin-bottom: 125px;
+  margin-left: 600px;
+  margin-right: 600px;
+  padding: 2%;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.editContainer {
+  background-color: green;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.loginPic {
+  flex: 1;
+  background-image: url("./assets/billy.webp");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  padding: 300px;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+.youPic {
+  flex: 1;
+  background-image: url("./assets/youPic.png");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  padding: 300px;
+  margin-right: 500px;
+}

@@ -30,8 +30,7 @@ const AdminOnePost = (props) => {
             <CardText>{blog_content}</CardText>
 
              <Button size="lg" tag={Link} to={`/admin/blog/edit/${id}`}> EDIT </Button>
-            
-            {/* LINK to (/delete/blog/:id) */}
+             <hr />
              <Button size="lg" onClick={() => props.deletePost(id)} > DELETE </Button> 
 
           </Card>

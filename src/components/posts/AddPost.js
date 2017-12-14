@@ -41,7 +41,7 @@ class AddPost extends Component {
         <FormGroup>
           <Label for="blog_content">Content</Label>
           <Input
-            type="text"
+            type="textarea"
             id="blog_content"
             value={this.state.blog_content}
             onChange={(e) => this.setState({blog_content: e.target.value})}

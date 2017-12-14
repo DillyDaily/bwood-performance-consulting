@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Form, FormGroup, Label, Button } from 'reactstrap';
+import { Container, Form, FormGroup, Label, Button, Col } from 'reactstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { editPost } from '../../actions/posts.actions';
@@ -21,41 +21,47 @@ class EditPost extends Component {
 
     return (
       <div>
-      <TopNav />      
-      <Title />
-      <Container style={{marginTop: 30}}>
-      <Form onSubmit={handleSubmit(this.editOnePost)}>
-        <FormGroup>
-          <Label for="title">Title</Label>
-          <Field
-            name="title"
-            component="input" 
-            type="text"
-            onChange={(e) => this.setState({title: e.target.value})}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="blog_content">Content</Label>
-          <Field
-            name="blog_content"
-            component="input" 
-            type="text"
-            onChange={(e) => this.setState({blog_content: e.target.value})}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="image">Image URL</Label>
-          <Field
-            name="image"
-            component="input" 
-            type="text"
-            onChange={(e) => this.setState({image: e.target.value})}
-          />
-        </FormGroup>
-        <Button color="primary" type="submit">Submit</Button>
-      </Form>
-    </Container>
-    <Footer />
+        <TopNav />      
+        <Title />
+        <Container style={{marginTop: 30}}>
+        <Form onSubmit={handleSubmit(this.editOnePost)}>
+          <FormGroup row>
+            <Label for="title">Title</Label>
+            <Col sm={10}>
+            <Field
+              name="title"
+              component="input" 
+              type="text"
+              onChange={(e) => this.setState({title: e.target.value})}
+            />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+            <Label for="blog_content">Content</Label>
+            <Col sm={10}>
+            <Field
+              name="blog_content"
+              component="input" 
+              type="textarea"
+              onChange={(e) => this.setState({blog_content: e.target.value})}
+            />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+            <Label for="image">Image URL</Label>
+            <Col sm={10}>
+            <Field
+              name="image"
+              component="input" 
+              type="text"
+              onChange={(e) => this.setState({image: e.target.value})}
+            />
+            </Col>
+          </FormGroup>
+          <Button color="primary" type="submit">Submit</Button>
+        </Form>
+      </Container>
+      <Footer />
     </div>
     )
   }

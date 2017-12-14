@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import TopNav from './TopNav';
 import Title from './Title';
+import ResultsTitle from './ResultsTitle';
 import Footer from './Footer';
 import { Parallax } from 'react-parallax';
 
-const image1 = "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/25182272_10107026660637652_1738643537894865125_o.jpg?oh=a174fc74e279911febff8dd93db54ac5&oe=5AD4E58C";
+const image1 = "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/25352314_10107032896146642_2304875485851622387_o.jpg?oh=8ef5a2d7664b5a6e7d46dda3f38089ba&oe=5AC90AA5";
 class Services extends Component {
 
   render () {
     return (
       <div>
         <TopNav />
-        <Title />
+        <ResultsTitle/>
         <Parallax bgImage={image1}
         strength={500}>
         <div style={{height: 500}}>
@@ -32,6 +33,7 @@ class Services extends Component {
                 
             </div>
           </div>
+        <div className="redTrack"></div>
         <Footer />
       </div>
     )
