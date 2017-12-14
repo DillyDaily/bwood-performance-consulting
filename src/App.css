@@ -205,13 +205,14 @@ font-family: 'Arimo', sans-serif; */
 }
 
 .formContainer {
-  margin-top: 125px;
+  margin-top: 50px;
   margin-bottom: 125px;
-  margin-left: 600px;
-  margin-right: 600px;
+  margin-left: 25%;
+  margin-right: 25%;
   padding: 2%;
-  background-color: blue;
+  background-color: white;
   border-radius: 5px;
+  border: 2px solid grey;
 }
 
 .editContainer {
@@ -233,6 +234,7 @@ font-family: 'Arimo', sans-serif; */
   padding: 300px;
   margin-left: 500px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .youPic {
   flex: 1;
@@ -242,4 +244,8 @@ font-family: 'Arimo', sans-serif; */
   height: 400px;
   padding: 300px;
   margin-right: 500px;
+}
+
+adminContainer {
+  background: white;
 }

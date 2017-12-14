@@ -18,22 +18,28 @@ class Admin extends Component {
           <div className="loginPic"></div>
           <div className="youPic"></div>
           </div>
+          <div className="adminContainer">
           <div className="formContainer">
             <Form>
-            <FormGroup row>
-            <Label for="exampleEmail" sm={2}>Email</Label>
-            <Col sm={10}>
-                <Input type="email" name="email" id="exampleEmail" placeholder="email address" />
-            </Col>
-            </FormGroup>
-            <FormGroup row>
-            <Label for="examplePassword" sm={2}>Password</Label>
-            <Col sm={10}>
-                <Input type="password" name="password" id="examplePassword" placeholder="password" />
-            </Col>
-            </FormGroup>
-            <Button size="lg" tag={Link} to={`/admin/blog`}color="primary" type="submit">Submit</Button>
+                <FormGroup>
+                    <h1>Log in</h1>
+                    {/* <Input plaintext>Some plain text/ static value</Input> */}
+                </FormGroup>
+                <FormGroup row>
+                    <Label for="exampleEmail" sm={2}>Email</Label>
+                    <Col sm={10}>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="email address" />
+                    </Col>
+                </FormGroup>
+                <FormGroup row>
+                    <Label for="examplePassword" sm={2}>Password</Label>
+                    <Col sm={10}>
+                        <Input type="password" name="password" id="examplePassword" placeholder="password" />
+                    </Col>
+                </FormGroup>
+                <Button size="lg" tag={Link} to={`/admin/blog`}color="primary" type="submit">Submit</Button>
             </Form>
+            </div>
           </div>
           <Footer />
 

@@ -12,12 +12,12 @@ class EditPost extends Component {
   editOnePost = (values) => { 
     console.log('edit form values: ', values);
     this.props.editPost(values)
+    this.props.history.push('/admin/blog')
   }
   
   render () {
     console.log('props from EDIT POST: ', this.props)
     const { handleSubmit } = this.props
-    // this.props.editPost(values)
 
     return (
       <div>
