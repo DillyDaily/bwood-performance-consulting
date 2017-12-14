@@ -7,6 +7,7 @@ import messages from './messages.reducers';
 const rootReducer = combineReducers({ 
     form: formReducer,
     posts,
+    testimonials,
     messages
 });
 

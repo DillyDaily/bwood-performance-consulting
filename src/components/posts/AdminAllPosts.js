@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TopNav from '../TopNav';
+import AdminTopNav from '../AdminTopNav';
 import Title from '../Title';
 import Footer from '../Footer';
 import { connect } from 'react-redux';
@@ -13,7 +13,7 @@ class AdminAllPosts extends Component {
     let thePosts = this.props.posts.map(post => <AdminOnePost key={post.id} post={post} />)
     return (
       <div> 
-         <TopNav />
+         <AdminTopNav />
          <div>
          <Button size="lg" tag={Link} to={`/admin/blog/new`}> ADD NEW POST </Button>
          </div>

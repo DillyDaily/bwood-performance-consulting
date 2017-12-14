@@ -3,7 +3,7 @@ import { Container, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { addPost } from '../../actions/posts.actions';
-import TopNav from '../TopNav';
+import AdminTopNav from '../AdminTopNav';
 import Title from '../Title';
 import Footer from '../Footer';
 import { Field, reduxForm } from 'redux-form';
@@ -25,7 +25,7 @@ class AddPost extends Component {
     console.log('props from ADD/EDIT POST: ', this.props)
     return (
       <div>
-      <TopNav />      
+      <AdminTopNav />      
       <Title />
       <Container style={{marginTop: 30}}>
       <Form onSubmit={this.handleSubmit}>

@@ -19,7 +19,7 @@ class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.addMessage(this.state)
-    this.props.history.push('/contact')
+    this.props.history.push('/')
   }
   
   render () {
