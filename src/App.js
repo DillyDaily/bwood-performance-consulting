@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Admin from './components/Admin';
+import Messages from './components/Messages';
 import AddPost from './components/posts/AddPost';
 import EditPost from './components/posts/EditPost';
 import AllPosts from './components/posts/AllPosts';
@@ -17,11 +18,13 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getPosts } from './actions/posts.actions';
 import { getTestimonials } from './actions/testimonials.actions';
+import { getMessages } from './actions/messages.actions';
 
 class App extends Component {
   componentDidMount() {
     this.props.getPosts()
     this.props.getTestimonials()
+    this.props.getMessages()
   }
 
   render() {
@@ -39,6 +42,7 @@ class App extends Component {
               <Route exact path="/blog" component={ AllPosts }/>
               {/* ADIMIN */}
               <Route exact path="/admin" component={ Admin }/>
+              <Route exact path="/admin/messages" component={ Messages }/>
               <Route exact path="/admin/blog" component={ AdminAllPosts }/>
               <Route exact path="/admin/blog/new" component={ AddPost }/>
               <Route exact path="/admin/blog/edit/:id" component={ EditPost }/>
@@ -55,7 +59,8 @@ class App extends Component {
 function mapDispatchToProps(dispatch) {
   return {
     getPosts: bindActionCreators(getPosts, dispatch),
-    getTestimonials: bindActionCreators(getTestimonials, dispatch)
+    getTestimonials: bindActionCreators(getTestimonials, dispatch),
+    getMessages: bindActionCreators(getMessages, dispatch)
   }
 }
 

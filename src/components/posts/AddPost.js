@@ -71,9 +71,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-// CreatePost = reduxForm({
-//   form: 'add_post'
-// })(CreatePost)
-
-
 export default connect(null, mapDispatchToProps)(AddPost);
