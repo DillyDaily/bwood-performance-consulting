@@ -31,10 +31,10 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto pageLinks" navbar>
               <NavItem>
-                <NavLink tag={Link} to="/admin/blog/new/">New Blog Post</NavLink>
+                <NavLink tag={Link} to="/admin/blog/new/">Add Post</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/admin/blog">Edit Delete Blog Post</NavLink>
+                <NavLink tag={Link} to="/admin/blog">Manage Blog</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to="/admin/messages">Messages</NavLink>

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-// import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
-// import { editPost } from '../../actions/posts.actions';
+import { Col, Button, Form, FormGroup, Label, Input, FormText, Collapse } from 'reactstrap';
 import TopNav from './TopNav';
 import Title from './Title';
 import Footer from './Footer';
@@ -10,6 +7,16 @@ import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 
 class Admin extends Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = { collapse: false };
+      }
+    
+      toggle() {
+        this.setState({ collapse: !this.state.collapse });
+      }  
+
   render () {
     return (
       <div>
@@ -18,12 +25,13 @@ class Admin extends Component {
           <div className="loginPic"></div>
           <div className="youPic">
           <div className="yn">
-              <Button className="yes">YES</Button>
+              <Button onClick={this.toggle} className="yes">YES</Button>
               <Button size="lg" tag={Link} to={`/`} className="yes">NO</Button>
           </div>
           </div>
           </div>
           <div className="adminContainer">
+          <Collapse isOpen={this.state.collapse}>
           <div className="formContainer">
             <Form>
                 <FormGroup>
@@ -45,6 +53,7 @@ class Admin extends Component {
                 <Button size="lg" tag={Link} to={`/admin/blog`}color="primary" type="submit">Submit</Button>
             </Form>
             </div>
+            </Collapse>
           </div>
           <Footer />
 
