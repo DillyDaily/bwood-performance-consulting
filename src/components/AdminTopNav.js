@@ -34,7 +34,7 @@ export default class TopNav extends React.Component {
                 <NavLink tag={Link} to="/admin/blog/new/">New Blog Post</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/">Edit Delete Blog Post</NavLink>
+                <NavLink tag={Link} to="/admin/blog">Edit Delete Blog Post</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to="/admin/messages">Messages</NavLink>

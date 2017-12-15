@@ -23,7 +23,7 @@ class Services extends Component {
       </Parallax>
           <div className="ServicesContainer">
             <div className="PersonalTrain"> 
-            <h2><strong>Online Training</strong></h2>
+            <h2><strong>Personal Training</strong></h2>
               <p>This package is for Individuals that are truly commited to change.  I require a deep level of commitment from all of my clients to make sure they are fully enrolled and commited to changing their lifestyle.  It is only here that we will get true lasting results.</p>
              
             </div>

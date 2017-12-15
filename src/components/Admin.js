@@ -16,7 +16,12 @@ class Admin extends Component {
           <TopNav />
           <div className="loginContainer">
           <div className="loginPic"></div>
-          <div className="youPic"></div>
+          <div className="youPic">
+          <div className="yn">
+              <Button className="yes">YES</Button>
+              <Button size="lg" tag={Link} to={`/`} className="yes">NO</Button>
+          </div>
+          </div>
           </div>
           <div className="adminContainer">
           <div className="formContainer">

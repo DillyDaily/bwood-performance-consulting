@@ -243,6 +243,18 @@ font-family: 'Arimo', sans-serif; */
   margin-right: 500px;
 }
 
-adminContainer {
+.adminContainer {
   background: white;
+  padding: 20px;
+}
+
+.yn {
+  display: flex;
+  margin-top: 300px;
+  padding: 10px;
+  /* justify-content: flex-end;   */
+}
+
+.yes{ 
+  margin-right: 20px;
 }
