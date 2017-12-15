@@ -23,40 +23,43 @@ class EditPost extends Component {
       <div>
         <TopNav />      
         <Title />
-        <Container style={{marginTop: 30}}>
+        <Container style={{marginTop: 30, marginBottom: 30}}>
         <Form onSubmit={handleSubmit(this.editOnePost)}>
           <FormGroup row>
-            <Label for="title">Title</Label>
-            <Col sm={10}>
+            <Label style={{ fontSize: '25px' }} for="title">Title</Label>
+           
             <Field
+              style={{ fontSize: '25px', width: '50' }}
               name="title"
               component="input" 
               type="text"
               onChange={(e) => this.setState({title: e.target.value})}
             />
-            </Col>
+           
           </FormGroup>
           <FormGroup row>
-            <Label for="blog_content">Content</Label>
-            <Col sm={10}>
+            <Label style={{ fontSize: '25px' }} for="blog_content">Content</Label>
+           
             <Field
+              style={{ fontSize: '25px' }}
               name="blog_content"
               component="input" 
               type="textarea"
               onChange={(e) => this.setState({blog_content: e.target.value})}
             />
-            </Col>
+           
           </FormGroup>
           <FormGroup row>
-            <Label for="image">Image URL</Label>
-            <Col sm={10}>
+            <Label style={{ fontSize: '25px' }} for="image">Image URL</Label>
+           
             <Field
+              style={{ fontSize: '25px' }}
               name="image"
               component="input" 
               type="text"
               onChange={(e) => this.setState({image: e.target.value})}
             />
-            </Col>
+           
           </FormGroup>
           <Button color="primary" type="submit">Submit</Button>
         </Form>

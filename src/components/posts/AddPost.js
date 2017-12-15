@@ -6,6 +6,7 @@ import { addPost } from '../../actions/posts.actions';
 import AdminTopNav from '../AdminTopNav';
 import Title from '../Title';
 import Footer from '../Footer';
+import Space from '../Space';
 import { Field, reduxForm } from 'redux-form';
 
 class AddPost extends Component {
@@ -59,6 +60,7 @@ class AddPost extends Component {
         <Button color="primary" type="submit">Submit</Button>
       </Form>
     </Container>
+    <Space />
     <Footer />
     </div>
     )

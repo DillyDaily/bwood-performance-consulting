@@ -9,10 +9,10 @@ const OneMessage = (props) => {
   let { id, first_name, last_name, message_content, email } = props.message
   return (
      
-      <div className="blogContainer">
+      <div className="mssgContainer">
       <Row>
         <Col sm="6">
-          <Card className="blogCard">
+          <Card className="mssgCard">
             <CardBody>
             <CardTitle>From: { first_name } { last_name }</CardTitle>
             <CardText>Message: { message_content }</CardText>

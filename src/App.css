@@ -54,7 +54,7 @@ font-family: 'Arimo', sans-serif; */
   display: flex;
   background-image: url("./assets/finishRed.png");
   background-size: cover;
-  height: 500px; 
+  height: 600px; 
 }
 
 .bwood {
@@ -195,7 +195,7 @@ font-family: 'Arimo', sans-serif; */
   flex: 1;
   width: 600px;
   /* background: cover; */
-  height: 400px;
+  height: 500px;
   padding: 2em;
   margin: 1em;
   font-size: 20px;
@@ -261,4 +261,25 @@ font-family: 'Arimo', sans-serif; */
 .space {
   background-color: black;
   height: 12em;
+}
+
+.mssgContainer {
+  display: inline-block;
+  background-color: grey;
+  margin: 2%
+}
+
+.mssgCard {
+  /* padding: 2em; */
+  margin: 1em;
+  width: 400px;
+  height: 400px;
+}
+
+Label {
+  width: 15%;
+}
+
+Field {
+
 }
