@@ -17,7 +17,7 @@ const OneMessage = (props) => {
             <CardTitle>From: { first_name } { last_name }</CardTitle>
             <CardText>Message: { message_content }</CardText>
             <CardText>{ first_name }'s Email: { email }</CardText>
-              <Button size="lg" onClick={() => props.deleteMessage(id)}>Replied</Button>
+              <Button size="lg" onClick={() => props.deleteMessage(id)}><strong> X </strong> Replied </Button>
             </CardBody>
           </Card>
         </Col>

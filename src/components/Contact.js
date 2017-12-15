@@ -28,7 +28,7 @@ class Contact extends Component {
       <div>
       <TopNav />      
       <Title />
-      <Container style={{marginTop: 30}}>
+      <Container style={{marginTop: 30, marginBottom: 30}}>
       <Form onSubmit={this.handleSubmit}>
         <FormGroup>
           <Label for="first_name">First Name: </Label>

@@ -3,6 +3,7 @@ import { Col, Button, Form, FormGroup, Label, Input, FormText, Collapse } from '
 import TopNav from './TopNav';
 import Title from './Title';
 import Footer from './Footer';
+import Space from './Space';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 
@@ -55,6 +56,7 @@ class Admin extends Component {
             </div>
             </Collapse>
           </div>
+          <Space />
           <Footer />
 
       </div>

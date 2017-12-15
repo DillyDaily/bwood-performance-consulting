@@ -257,3 +257,8 @@ font-family: 'Arimo', sans-serif; */
 .yes{ 
   margin-right: 20px;
 }
+
+.space {
+  background-color: black;
+  height: 12em;
+}
