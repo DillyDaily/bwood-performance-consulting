@@ -7,6 +7,7 @@ import OnePost from './OnePost';
 import TopNav from '../TopNav';
 import Title from '../Title';
 import Footer from '../Footer';
+import search from '../../assets/search.png';
 
 class AllPosts extends Component {
   render () {
@@ -18,14 +19,15 @@ class AllPosts extends Component {
       <div> 
          <TopNav />
          <Title />
-         <div> 
+         <div className="searchBar"> 
             <Form inline >
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                <div>
+                <div className="searchBar">
+                <img className="search" src={search} alt="search"/>
                   <Input 
                     type="search" 
                     className="SearchBar form-control input-sm search-form"
-                    placeholder="Search Brand Name" 
+                    placeholder="Search" 
                     onChange={(e) => {
                       this.props.updateSearchBar(e.target.value)
                     }}

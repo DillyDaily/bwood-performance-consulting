@@ -283,3 +283,13 @@ Label {
 Field {
 
 }
+
+.search {
+  margin: 1em;
+  height: 2em;
+}
+
+.searchBar {
+  background-color: white;
+  width: 100%;
+  }
