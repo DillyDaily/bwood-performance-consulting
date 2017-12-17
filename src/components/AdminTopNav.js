@@ -22,7 +22,7 @@ export default class TopNav extends React.Component {
     return (
         <Navbar className="navBarContainer" color="" dark expand="md">
           <div className="logo"> 
-            <NavbarBrand tag={Link} to="/"><img src={logo} alt="logo"/></NavbarBrand>
+            <NavbarBrand tag={Link} to="/admin/blog"><img src={logo} alt="logo"/></NavbarBrand>
           </div>
           <div className="newNav">
 
@@ -40,7 +40,7 @@ export default class TopNav extends React.Component {
                 <NavLink tag={Link} to="/admin/messages">Messages</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/">Log Out</NavLink>
+                <NavLink tag={Link} to="/admin">Log Out</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

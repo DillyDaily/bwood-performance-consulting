@@ -14,6 +14,8 @@ class AdminAllPosts extends Component {
     return (
       <div> 
          <AdminTopNav />
+         <Title />
+         <h1 className="manage">Manage Your Blog</h1>
          {/* <div>
          <Button size="lg" tag={Link} to={`/admin/blog/new`}> ADD NEW POST </Button>
          </div> */}
